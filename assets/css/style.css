@@ -160,7 +160,12 @@ header {
     border: 1px solid #5ee077;
     color: #fff;
 }
-
+/* Search-Bar
+============================*/
+.search-bar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /* Produits
 ============================*/
 .produits-plus {
@@ -187,7 +192,7 @@ header {
 
 /* Cards
 ============================*/
-.famille-prod {
+.famille-cards {
     background-color: rgb(255, 255, 255);
 }
 
@@ -197,6 +202,7 @@ header {
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
 }
 
 .famille-details img {
@@ -209,24 +215,6 @@ header {
     text-align: center;
 }
 
-/* Galerie 
-============================*/
-.galeries-img {
-    display: block;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    margin-bottom: 20px;
-}
-
-.galeries-title h4 {
-    color: rgb(255, 255, 255);
-    position: relative;
-    left: 40px;
-}
 
 /* Bannière
 ============================*/
