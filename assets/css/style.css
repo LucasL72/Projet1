@@ -1,3 +1,5 @@
+/*-----Début Projet Arinfo------*/
+/*-------------------------------------------*/
 /* Global 
 ============================*/
 
@@ -53,6 +55,9 @@ p {
 }
 section{
     padding:0px 0px 20px 0px;
+}
+.bg-theme{
+    background-color: #02a723;
 }
 /* Header 
 ============================*/
@@ -156,7 +161,7 @@ header {
     color: #fff;
 }
 
-/* Produits 
+/* Produits
 ============================*/
 .produits-plus {
     margin: 20px 0;
@@ -180,10 +185,10 @@ header {
 
 }
 
-/* Famille
+/* Cards
 ============================*/
 .famille-prod {
-    background-color: rgb(180, 255, 180);
+    background-color: rgb(255, 255, 255);
 }
 
 .famille-details {
@@ -223,21 +228,15 @@ header {
     left: 40px;
 }
 
-/* Avis clients
+/* Bannière
 ============================*/
-.clients {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)), url(paysage5.jpg);
+.banniere {
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)),url(paysage5.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-.clients h2 {
-    color: rgb(255, 255, 255);
-}
-
-.clients h2::after {
-    background-color: #fff;
+    min-height: 30vh;
+    color: #fff;
 }
 
 blockquote {
@@ -271,6 +270,7 @@ cite img {
 /* contact
 ============================*/
 .contact-form {
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -301,10 +301,8 @@ cite img {
 /* Footer
 ============================*/
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color:#02a723;
     color: #fff;
-    height: 60px;
-    padding: 20px 20px;
 }
 
 .copyright {
@@ -313,4 +311,10 @@ footer {
 
 .copyright a {
     color: #fff;
+}
+.footer-link{
+    color:#fff;
+}
+.socials {
+    font-size: 25px
 }
