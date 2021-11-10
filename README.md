@@ -1,2 +1,2 @@
-# projet
+# Projet
 Début projet Arinfo
