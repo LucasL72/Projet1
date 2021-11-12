@@ -34,11 +34,15 @@ h2:after {
     width: 100px;
     content: "";
     margin: 0 auto;
-    margin-top: 10px;
 }
 
 h3 {
     font-size: 160%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 125%
 }
 
 p {
@@ -53,16 +57,27 @@ p {
     font-weight: 300;
     line-height: 20px;
 }
-section{
-    padding:0px 0px 20px 0px;
+
+section {
+    padding: 0px 0px 20px 0px;
 }
-.bg-theme{
+
+.bg-theme {
     background-color: #02a723;
 }
+.theme-com{
+    background-image: linear-gradient(rgba(219, 168, 59, 0.5), rgba(0, 212, 255, 0.5));
+}
+.theme-contact{
+    background-image: linear-gradient(rgba(59, 59, 57, 0.5), rgba(170, 197, 170, 0.945));
+
+}
+
+
 /* Header 
 ============================*/
 header {
-    background-image: linear-gradient(rgba(10, 240, 149, 0.4), rgba(0, 212, 255, 0.6)), url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
+    background-image: url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -160,13 +175,15 @@ header {
     border: 1px solid #5ee077;
     color: #fff;
 }
+
 /* Search-Bar
 ============================*/
-.search-bar{
+.search-bar {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/* Produits
+
+/* ID
 ============================*/
 .produits-plus {
     margin: 20px 0;
@@ -179,7 +196,7 @@ header {
 
 .produit-img {
     max-width: 100%;
-    height: auto;
+    height: 50vh;
 
 }
 
@@ -187,6 +204,14 @@ header {
     font-size: 34px;
     color: rgb(4, 184, 4);
     transition: all 1s;
+
+}
+/* Logo présentation
+============================*/
+.present-img {
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 58%;
 
 }
 
@@ -219,7 +244,7 @@ header {
 /* Bannière
 ============================*/
 .banniere {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)),url(paysage5.jpg);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)), url(paysage5.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -227,25 +252,24 @@ header {
     color: #fff;
 }
 
+/* Commentaires
+============================*/
+.client-profil {
+    border: 2px solid grey;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+
+}
+
 blockquote {
     line-height: 130%;
     font-style: italic;
-    color: rgb(255, 255, 255);
-}
-
-blockquote:before {
-    content: "\201D";
-    font-size: 700%;
-    position: relative;
-    top: 40px;
-    left: 3px;
-    color: rgba(255, 255, 255, 0.6)
+    color: rgb(0, 0, 0);
 }
 
 cite {
     display: block;
     font-size: 80%;
-    margin-top: 20px;
 
 }
 
@@ -253,6 +277,25 @@ cite img {
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+/* Galerie 
+============================*/
+.galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+}
+
+.galeries-title h4 {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 40px;
 }
 
 /* contact
@@ -273,13 +316,14 @@ cite img {
 
 .map {
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 90%;
     height: 0;
     overflow: hidden;
 }
 
 .map iframe {
     position: absolute;
+    border-radius: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -289,7 +333,7 @@ cite img {
 /* Footer
 ============================*/
 footer {
-    background-color:#02a723;
+    background-color: #02a723;
     color: #fff;
 }
 
@@ -300,9 +344,11 @@ footer {
 .copyright a {
     color: #fff;
 }
-.footer-link{
-    color:#fff;
+
+.footer-link {
+    color: #fff;
 }
+
 .socials {
     font-size: 25px
 }
