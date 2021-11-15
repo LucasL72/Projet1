@@ -22,15 +22,14 @@
 
 <body>
     <!-------------------navbar---------------------------------------------->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-theme">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" width="40" height="35"
-                >
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" width="40" height="35">
                     Mon Site
                 </a>
                 <ul class="navbar-nav me-auto mb-2mb-lg-0">
@@ -41,7 +40,7 @@
                         <a class="nav-link" href="/blog.html">Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/home.html#photos">Photos</a>
+                        <a class="nav-link" href="/pics.html">Photos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact.html">Nous contacter</a>
@@ -49,7 +48,7 @@
                 </ul>
             </div>
 
-           <!-------------------Modal "se connecter"---------------------------------------------->
+            <!-------------------Modal "se connecter"---------------------------------------------->
             <!-- Button modal -->
             <div class="justify-content-end">
                 <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -121,6 +120,10 @@
             <form class=" row g-3 needs-validation" novalidate>
 
                 <div class="row">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Photo de Profil</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
 
                     <div class="col-md-6">
                         <label for="validationCustom01" class="form-label">Prénom:</label>
@@ -135,6 +138,11 @@
                         <div class="valid-feedback">
                             Looks good!
                         </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
                     </div>
                     <div class="col-md-12">
                         <label for="validationCustomUsername" class="form-label">Nom d'utilisateur:</label>

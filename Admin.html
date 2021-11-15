@@ -45,11 +45,11 @@
             <!-------------------Modal "se connecter"--------------------->
             <!-- Button modal -->
             <div class="justify-content-end">
-                <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#connectModal">
                     Se connecter/S'inscrire
                 </button>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -91,6 +91,24 @@
             </div>
         </div>
     </nav>
+
+    <!------------------- Header---------------------------------------------->
+    <header>
+        <div class="container">
+            <div class="row home-title">
+                <div class="col-md-12">
+                    <h1> Bonjour Administrateur</h1>
+                    <div class="typewriter-container">
+                        <div class="typewriter">
+                            <p class="welcome">Bien ou bien ?! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
     <!-------------------Page Admin---------------------------------------------->
     <main>
         <h2>Page Administrateur</h2>
@@ -109,34 +127,118 @@
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
 
-                            <table class="table">
+                            <table class="table table-light">
                                 <thead>
                                     <tr>
                                         <th scope="col">Image de Profil</th>
                                         <th scope="col">User Name</th>
-                                        <th scope="col">Prénom</th>
                                         <th scope="col">Nom</th>
+                                        <th scope="col">Prénom</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Gérer</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th> </th>
+                                        <th><img class="img-user" src="./assets/images/emilie.jpg"> </th>
                                         <td>user name</td>
-                                        <td>name</td>
-                                        <td>@mdo</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>@mail.com</td>
+                                        <td>
+                                            <!-- Button trigger modal Gestin users -->
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#GestModal">
+                                                Gérer
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade dark" id="GestModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel"> Gérer Profil
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="row g-3">
+                                                                <div class="col-md-12">
+                                                                    <div class="mb-3">
+                                                                        <label for="formFile" class="form-label">Photo
+                                                                            de Profil</label>
+                                                                        <input class="form-control" type="file"
+                                                                            id="formFile">
+                                                                    </div>
+                                                                    <img class="img-user"
+                                                                        src="./assets/images/emilie.jpg">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="validationDefault01"
+                                                                        class="form-label">First name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="validationDefault01" value="..." required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="validationDefault02"
+                                                                        class="form-label">Last name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="validationDefault02" value="..." required>
+                                                                </div>
+
+
+                                                                <div class="col-md-12">
+                                                                    <label for="exampleFormControlInput1"
+                                                                        class="form-label">Email address</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleFormControlInput1"
+                                                                        placeholder="name@example.com">
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <label for="validationDefaultUsername"
+                                                                        class="form-label">Username</label>
+                                                                    <div class="input-group">
+                                                                        <span class="input-group-text"
+                                                                            id="inputGroupPrepend2">@</span>
+                                                                        <input type="text" class="form-control"
+                                                                            id="validationDefaultUsername"
+                                                                            aria-describedby="inputGroupPrepend2"
+                                                                            required>
+                                                                    </div>
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger">Banned</button>
+
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th>2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
+                                        <th><img class="img-user" src="./assets/images/emilie.jpg"> </th>
+                                        <td>user name</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>@mail.com</td>
+                                        <td> ...</td>
                                     </tr>
                                     <tr>
-                                        <th>3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
+                                        <th><img class="img-user" src="./assets/images/emilie.jpg"> </th>
+                                        <td>user name</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>@mail.com</td>
+                                        <td> ...</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -155,6 +257,59 @@
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
+                            <!-------------------Add Cards---------------------------------------------->
+                            <div class="col-md-12">
+                                <!-------------------Button Modal cards---------------------------------------------->
+                                <h3><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#CardsModal">
+                                        Add Card
+                                    </button></h3>
+
+                                <!-- Modal -->
+                                <div class="modal fade dark" id="CardsModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLab"> Nouvelle Card
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="col-md-12">
+                                                    <label for="formFile" class="form-label">Photos Article</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label">Titre</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="C'est beau c'est Bosch">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Contenu
+                                                    </label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+
+                                                <button type="button" class="btn btn-primary">Save
+                                                    changes</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-------------------Cards---------------------------------------------->
                             <div class="famille-prod" id="cards">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -203,49 +358,7 @@
 
 
                                     </div>
-                                    <div class="row">
 
-                                        <div class="col-md-4">
-                                            <div class="famille-details">
-                                                <img src="assets/images/paysage2.jpg">
-                                                <h4>4ème Article</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-                                                    accusamus doloribus et
-                                                    tempora
-                                                    id voluptates dicta unde similique suscipit enim. Pariatur vero sunt
-                                                    et earum quod
-                                                    laborum,
-                                                    facilis eos quos.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="famille-details">
-                                                <img src="assets/images/paysage4.jpg">
-                                                <h4>5ème Article</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-                                                    accusamus doloribus et
-                                                    tempora
-                                                    id voluptates dicta unde similique suscipit enim. Pariatur vero sunt
-                                                    et earum quod
-                                                    laborum,
-                                                    facilis eos quos.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="famille-details">
-                                                <img src="assets/images/paysage3.jpg">
-                                                <h4>6ème Article</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-                                                    accusamus doloribus et
-                                                    tempora
-                                                    id voluptates dicta unde similique suscipit enim. Pariatur vero sunt
-                                                    et earum quod
-                                                    laborum,
-                                                    facilis eos quos.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -263,13 +376,62 @@
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body">
-                            <section>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h2>Messages</h2>
+
+                            <!-------------------Add Comms---------------------------------------------->
+                            <div class="col-md-12">
+                                <!-------------------Button Modal Comms---------------------------------------------->
+                                <h3><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#ComsModal">
+                                        Add Comment
+                                    </button></h3>
+
+                                <!-- Modal -->
+                                <div class="modal fade dark" id="ComsModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLab"> Nouveau commentaire
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="col-md-12">
+                                                    <label for="validationDefaultUsername"
+                                                        class="form-label">Username</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                                        <input type="text" class="form-control"
+                                                            id="validationDefaultUsername"
+                                                            aria-describedby="inputGroupPrepend2" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Contenu
+                                                    </label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+
+                                                <button type="button" class="btn btn-primary">Save
+                                                    changes</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
+
+                            </div>
+
+                            <!-------------------Commentaires---------------------------------------------->
+                            <section>
+                                <div class="container">
+
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="client-profil">
@@ -326,6 +488,34 @@
             </div>
         </div>
     </main>
+     <!------------------- Footer---------------------------------------------->
+     <footer class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12 copyright">
+
+                <div class="contact-form">
+                    <label>Newsletter:</label>
+                    <input type="email" id="email" placeholder="Ajouter votre email" />
+                    <button class="btn btn-contact">Envoyer</button>
+
+                </div>
+
+
+                <div class="col-md-12 socials">
+                    <a href="#"> <i class="fab fa-discord black"></i></a>
+                    <a href="#"> <i class="fab fa-facebook black"></i></a>
+                    <a href="#"> <i class="fab fa-twitter black"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin black"></i></a>
+                    <a href="#"> <i class="fab fa-snapchat black"></i></a>
+                    <a href="#"> <i class="fab fa-instagram black"></i></a>
+                </div>
+
+                <p class="copyright">Grimou Company © 2021 <a href="#">Mentions légales</a></p>
+
+            </div>
+        </div>
+    </footer>
 
 
 </body>

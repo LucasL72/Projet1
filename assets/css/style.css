@@ -62,10 +62,10 @@ section {
 }
 
 .bg-theme {
-    background-color: #9e9e9e;
+    background-color: #009b00;
 }
 .theme-com{
-    background-image: linear-gradient(rgba(77, 255, 23, 0.5), rgba(0, 212, 255, 0.5));
+    background-image: linear-gradient( rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
 }
 .theme-contact{
     background-image: linear-gradient(rgba(59, 59, 57, 0.5), rgba(170, 197, 170, 0.945));
@@ -76,7 +76,7 @@ section {
 /* Header 
 ============================*/
 header {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)), url(mtfcolor1.jpg);
+    background-image: url(mtfcolor1.jpg);
     background-position:100% 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -220,7 +220,7 @@ header {
 
 .famille-details {
     background-color: #fff;
-    background-image: linear-gradient(rgba(219, 168, 59, 0.5), rgba(0, 212, 255, 0.5));
+    background-image: linear-gradient( rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -272,6 +272,11 @@ cite {
 
 cite img {
     height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.img-user {
+    height:50px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -327,7 +332,7 @@ cite img {
 /* Footer
 ============================*/
 footer {
-    background: #9e9e9e;
+    background: #009b00;
     color: #fff;
 }
 
