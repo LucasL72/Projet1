@@ -62,10 +62,10 @@ section {
 }
 
 .bg-theme {
-    background-color: #02a723;
+    background-color: #9e9e9e;
 }
 .theme-com{
-    background-image: linear-gradient(rgba(219, 168, 59, 0.5), rgba(0, 212, 255, 0.5));
+    background-image: linear-gradient(rgba(77, 255, 23, 0.5), rgba(0, 212, 255, 0.5));
 }
 .theme-contact{
     background-image: linear-gradient(rgba(59, 59, 57, 0.5), rgba(170, 197, 170, 0.945));
@@ -80,7 +80,7 @@ header {
     background-position:100% 100%;
     background-size: cover;
     background-attachment: fixed;
-    height: 90vh;
+    height: 80vh;
 }
 
 .home-title {
@@ -160,8 +160,8 @@ header {
 }
 
 .btn-ghost {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid black;
+    color:green;
 }
 
 .btn-full:hover {
@@ -327,7 +327,7 @@ cite img {
 /* Footer
 ============================*/
 footer {
-    background-color: #02a723;
+    background: #9e9e9e;
     color: #fff;
 }
 

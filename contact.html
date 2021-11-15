@@ -30,24 +30,71 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#"><img src="./assets/images/creative1.jpg" alt="" width="30" height="24"
-                        class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" width="40" height="35">
                     Mon Site
                 </a>
                 <ul class="navbar-nav me-auto mb-2mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="/home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cards">Actualités</a>
+                        <a class="nav-link" href="/blog.html">Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#photos">Photos</a>
+                        <a class="nav-link" href="/home.html#photos">Photos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Nous contacter</a>
+                        <a class="nav-link" href="/contact.html">Nous contacter</a>
                     </li>
                 </ul>
+            </div>
+
+            <!-------------------Modal "se connecter"---------------------------------------------->
+            <!-- Button modal -->
+            <div class="justify-content-end">
+                <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Se connecter/S'inscrire
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Se connecter/S'inscrire</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="container">
+                                        <div class="mb-3">
+                                            <label for="loginEmail" class="form-label">Adresse Mail</label>
+                                            <input type="email" class="form-control" id="loginEmail"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text"></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Password" class="form-label">Mot de passe</label>
+                                            <input type="password" class="form-control" id="Password">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="Check">
+                                            <label class="form-check-label" for="Check">Se souvenir de moi</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-contact">Se connecter</button>
+                                        <a href="/register.html" class="btn btn-ghost">Nouvel Utilisateur</a>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
