@@ -286,9 +286,10 @@ cite img {
 .galeries-img {
     display: block;
     background-size:cover;
-    background-position:100% 100%;
+    background-position:center;
     background-repeat: no-repeat;
-    height: 300px;
+    width:100%;
+    height: 350px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     margin-bottom: 15px;
