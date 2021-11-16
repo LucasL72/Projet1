@@ -51,9 +51,9 @@ p {
 }
 
 .welcome {
-    color: white;
-    font-size: 20px;
-    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 325;
     line-height: 20px;
 }
 
@@ -143,7 +143,7 @@ header {
     }
 }
 
-/* Header Boutons
+/*  Boutons
 ============================*/
 .btn {
     display: inline-block;
@@ -203,8 +203,8 @@ header {
     font-size: 34px;
     color: rgb(4, 184, 4);
     transition: all 1s;
-
 }
+
 /* Logo présentation
 ============================*/
 .present-img {
@@ -255,6 +255,7 @@ header {
     border: 2px solid grey;
     padding: 0px 5px;
     margin-bottom: 5px;
+   border-radius: 20px;
 
 }
 
@@ -279,6 +280,11 @@ cite img {
     height:50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+.bg-com{
+    margin-top:20px;
+    border: 2px solid grey;
+    padding: 5px 5px;
 }
 
 /* Galerie 
@@ -351,4 +357,11 @@ footer {
 
 .socials {
     font-size: 25px
+}
+
+@media (max-width: 990px) {
+.home-title {
+    position: relative;
+    top: 30%;
+}
 }
