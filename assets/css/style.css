@@ -64,10 +64,12 @@ section {
 .bg-theme {
     background-color: #009b00;
 }
-.theme-com{
-    background-image: linear-gradient( rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
+
+.theme-com {
+    background-image: linear-gradient(rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
 }
-.theme-contact{
+
+.theme-contact {
     background-image: linear-gradient(rgba(59, 59, 57, 0.5), rgba(170, 197, 170, 0.945));
 
 }
@@ -77,7 +79,7 @@ section {
 ============================*/
 header {
     background-image: url(mtfcolor1.jpg);
-    background-position:100% 100%;
+    background-position: 100% 100%;
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
@@ -161,7 +163,7 @@ header {
 
 .btn-ghost {
     border: 1px solid black;
-    color:green;
+    color: green;
 }
 
 .btn-full:hover {
@@ -220,7 +222,7 @@ header {
 
 .famille-details {
     background-color: #fff;
-    background-image: linear-gradient( rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
+    background-image: linear-gradient(rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -255,7 +257,8 @@ header {
     border: 2px solid grey;
     padding: 0px 5px;
     margin-bottom: 5px;
-   border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 
 }
 
@@ -276,25 +279,28 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
 }
+
 .img-user {
-    height:50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.bg-com{
-    margin-top:20px;
+
+.bg-com {
+    margin-top: 20px;
     border: 2px solid grey;
     padding: 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 /* Galerie 
 ============================*/
 .galeries-img {
     display: block;
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    width:100%;
+    width: 100%;
     height: 350px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -322,7 +328,7 @@ cite img {
 }
 
 .map {
-    position:relative;
+    position: relative;
     padding-bottom: 90%;
     height: 0;
     overflow: hidden;
@@ -360,8 +366,8 @@ footer {
 }
 
 @media (max-width: 990px) {
-.home-title {
-    position: relative;
-    top: 30%;
-}
+    .home-title {
+        position: relative;
+        top: 30%;
+    }
 }
