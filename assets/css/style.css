@@ -29,7 +29,7 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
-    background-color:#009b00;
+    background-color: #009b00;
     width: 100px;
     content: "";
     margin: 0 auto;
@@ -66,11 +66,11 @@ section {
 }
 
 .theme-com {
-    background-image: linear-gradient(rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
+    background-image: linear-gradient(180deg, rgba(3, 71, 1, 0.6), rgba(54, 129, 39, 0.7), rgba(253, 208, 5, 0.432));
 }
 
 .theme-contact {
-    background-image: linear-gradient(rgba(59, 59, 57, 0.5), rgba(170, 197, 170, 0.945));
+    background-image: linear-gradient(rgba(2, 165, 24, 0.5), rgba(170, 197, 170, 0.945));
 
 }
 
@@ -78,7 +78,7 @@ section {
 /* Header 
 ============================*/
 header {
-    background-image: url(mtfcolor1.jpg);
+    background-image:linear-gradient(90deg, rgba(3, 71, 1, 0.6), rgba(54, 129, 39, 0.7), rgba(253, 208, 5, 0.432)), url(mtfcolor1.jpg);
     background-position: 100% 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -222,7 +222,7 @@ header {
 
 .famille-details {
     background-color: #fff;
-    background-image: linear-gradient(rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3));
+    background-image: linear-gradient(180deg, rgba(6, 138, 1, 0.6), rgba(16, 167, 41, 0.4), rgba(253, 208, 5, 0.4));
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -243,7 +243,7 @@ header {
 /* Bannière
 ============================*/
 .banniere {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)), url(mtfcolor2.jpg);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(155, 187, 38, 0.7), rgba(253, 208, 5, 0.4)), url(mtfcolor2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -256,7 +256,8 @@ header {
 .client-profil {
     border: 2px solid grey;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
 
 }
 
@@ -267,6 +268,7 @@ blockquote {
 }
 
 cite {
+    margin-top: 5px;
     display: block;
     font-size: 100%;
 
@@ -275,35 +277,38 @@ cite {
 cite img {
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .img-user {
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .bg-com {
     margin-top: 20px;
     border: 2px solid grey;
     padding: 5px 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.like{
-    display: inline-block;
+.like {
     padding: 5px 10px;
     border-radius: 10px;
     color: rgb(252, 252, 252);
-    border: 1px solid  rgba(20, 243, 0, 0.685);
-    background-color:rgba(20, 243, 0, 0.685);
+    border: 1px solid rgba(20, 243, 0, 0.685);
+    background-color: rgba(20, 243, 0, 0.685);
+    transition: background-color 1s, color 1s, border 1s;
 }
+.like:hover{
+    background-color:rgb(255, 255, 255);
+    color:#f3ba00
+}
+
 /* Galerie 
 ============================*/
 .galeries-img {
     display: block;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -322,6 +327,7 @@ cite img {
 .contact-form {
     margin-top: 10px;
 }
+
 .contact-message {
     width: 100%;
 }
@@ -355,9 +361,10 @@ footer {
 
 .copyright {
     text-align: center;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
 .copyright a {
     color: #fff;
 }

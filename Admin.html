@@ -44,80 +44,76 @@
 
             <!-------------------Modal "se connecter"--------------------->
             <!-- Button modal -->
-            
-                <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#MyModal">
-                    Se connecter/S'inscrire
-                </button>
-                <!-- 1 Modal -->
-                <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Se connecter/S'inscrire</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="container">
-                                        <div class="mb-3">
-                                            <label for="loginEmail" class="form-label">Adresse Mail</label>
-                                            <input type="email" class="form-control" id="loginEmail"
-                                                aria-describedby="emailHelp">
-                                            <div id="emailHelp" class="form-text"></div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="Password" class="form-label">Mot de passe</label>
-                                            <input type="password" class="form-control" id="Password">
-                                        </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="Check">
-                                            <label class="form-check-label" for="Check">Se souvenir de moi</label>
-                                        </div>
-                                        <a data-bs-toggle="modal" href="#lostpassword" role="button">Mot de passe
-                                            oublié</a><br>
-                                        <button type="submit" class="btn btn-contact">Se connecter</button>
-                                        <a href="register.html" class="btn btn-ghost">Nouvel Utilisateur</a>
+
+            <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#MyModal">
+                Se connecter/S'inscrire
+            </button>
+            <!-- 1 Modal -->
+            <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Se connecter/S'inscrire</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="container">
+                                    <div class="mb-3">
+                                        <label for="loginEmail" class="form-label">Adresse Mail</label>
+                                        <input type="email" class="form-control" id="loginEmail"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text"></div>
                                     </div>
-                                </form>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2 Modal lost password -->
-                <div class="modal fade" id="lostpassword" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-                    tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel2">Mot de passe oublié</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="mb-3">
-                                    <label for="loginEmail" class="form-label">Votre Adresse Mail</label>
-                                    <input type="email" class="form-control" id="loginEmail"
-                                        aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text"></div>
-                                    <button class="btn btn-primary">Envoyer</button>
+                                    <div class="mb-3">
+                                        <label for="Password" class="form-label">Mot de passe</label>
+                                        <input type="password" class="form-control" id="Password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="Check">
+                                        <label class="form-check-label" for="Check">Se souvenir de moi</label>
+                                    </div>
+                                    <a data-bs-toggle="modal" href="#lostpassword" role="button">Mot de passe
+                                        oublié</a><br>
+                                    <button type="submit" class="btn btn-contact">Se connecter</button>
+                                    <a href="register.html" class="btn btn-ghost">Nouvel Utilisateur</a>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-contact" data-bs-target="#MyModal" data-bs-toggle="modal">Se
-                                    connecter</button>
-                            </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
+            <!-- 2 Modal lost password -->
+            <div class="modal fade" id="lostpassword" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel2">Mot de passe oublié</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Votre Adresse Mail</label>
+                                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text"></div>
+                                <button class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-contact" data-bs-target="#MyModal" data-bs-toggle="modal">Se
+                                connecter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </nav>
 
@@ -205,14 +201,14 @@
                                             <button type="button" class="btn" data-bs-toggle="modal"
                                                 data-bs-target="#GestModal">
                                                 <i class="fas fa-tools"></i></i></button>
-                                            </td>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
 
-                    <!-- Modal -->
+                    <!---------------------------- Modal users ------------------------------->
                     <div class="modal fade dark" id="GestModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -364,7 +360,7 @@
 
                         </div>
                     </div>
-                    <!-------------------------- Modal ------------------------------->
+                    <!-------------------------- Modal cards ------------------------------->
                     <div class="modal fade dark" id="CardsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -424,7 +420,7 @@
                                         Add Comment
                                     </button></h3>
 
-                                <!-- ---------------Modal ----------------------->
+                                <!-- ---------------Modal coms ----------------------->
                                 <div class="modal fade dark" id="ComsModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -534,19 +530,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!------------------------- Modal ------------------------->
+                                <!------------------------- Modal suppr coms ------------------------->
                                 <div class="modal fade" id="MessModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                     aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Supprimer le commentaire
+                                                <h5 class="modal-title" id="exampleModalLabel">Supprimer contenu
                                                 </h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                Voulez-vous vraiment supprimer ce commentaire
+                                                Voulez-vous vraiment supprimer ce contenu
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
@@ -561,8 +557,117 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <!-----------Gestion Photos----------------------------------->
+                <div class="accordion-item">
+                    <p class="accordion-header" id="panelsStayOpen-headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapsefour">
+                            Gestion Photos
+                        </button>
+                    </p>
+                    <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingfour">
+                        <!-----------Photos----------------------------------->
+                        <div class="accordion-body">
+                            <h3><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#picsModal">
+                                    Add pics
+                                </button></h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="galeries-img" style="background-image: url(assets/css/mtfcolor1.jpg);">
+                                        <div class="galeries-title">
+                                            <h4>Image description</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="galeries-img" style="background-image: url(assets/css/mtfcolor2.jpg);">
+                                        <div class="galeries-title">
+                                            <h4>Image description</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="galeries-img"
+                                        style="background-image: url(assets/images/creative1.jpg);">
+                                        <div class="galeries-title">
+                                            <h4>Image description</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="galeries-img"
+                                        style="background-image: url(assets/images/creative3.jpg);">
+                                        <div class="galeries-title">
+                                            <h4>Image description</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="galeries-img"
+                                        style="background-image: url(assets/images/creative4.jpg);">
+                                        <div class="galeries-title">
+                                            <h4>Image description</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="galeries-img"
+                                        style="background-image: url(assets/images/creative1.jpg);">
+                                        <div class="galeries-title">
+                                            <h4>Image description</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------------Modal photos ----------------------->
+                        <div class="modal fade dark" id="picsModal" tabindex="-1" aria-labelledby="ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLab"> Nouvelle photo
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="col-md-12">
+                                            <label for="exampleFormControlInput1" class="form-label">Titre</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="C'est beau c'est Bosch">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Photo</label>
+                                            <input class="form-control" type="file" id="formFile">
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-primary">Save
+                                            changes</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </main>
     <!------------------- Footer---------------------------------------------->
     <footer class="container-fluid">
