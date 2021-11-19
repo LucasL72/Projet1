@@ -24,7 +24,7 @@
 <body>
     <!-------------------Navbar---------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-theme">
-        <div class="container-fluid">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -110,7 +110,8 @@
                         <div class="modal-body">
                             <div class="mb-3">
                                 <p class="fst-italic">Nous vous enverrons le mail de réinitialisation</p>
-                                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Votre Adresse mail">
+                                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+                                    placeholder="Votre Adresse mail">
                                 <div id="emailHelp" class="form-text"></div>
                                 <button class="btn btn-primary">Envoyer</button>
                             </div>
@@ -132,7 +133,6 @@
                         </div>
                         <div class="modal-body">
                             Voulez-vous vraiment vous déconnecter ?
-
                         </div>
 
                         <div class="modal-footer">
@@ -152,7 +152,7 @@
                     <h1> Mon Site</h1>
                     <div class="typewriter-container">
                         <div class="typewriter">
-                            <p class="welcome">Rejoingnez l'aventure!</p>
+                            <p class="welcome">Rejoignez l'aventure!</p>
                         </div>
                     </div>
                 </div>
@@ -215,58 +215,60 @@
     <!-------------------Commentaires---------------------------------------------->
     <section class="theme-com">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Commentaires</h2>
-                </div>
+
+            <div class="col-md-12">
+                <h2>Commentaires</h2>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="client-profil row position-relative">
-                        <div class="col-6"> <cite> <img src="assets/images/julia.jpg"> Anonyme</cite></div>
-                        <div><i class="fas fa-heart  position-absolute like top-0 end-0"> 2</i></div>
-                        <blockquote>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quos a obcaecati
-                            explicabo
-                            porro sint nulla ex quasi alias, ipsa necessitatibus in consequatur cum earum esse
-                            deleniti
-                            delectus unde perspiciatis.
 
-                        </blockquote>
-                    </div>
+            <div class="col-md-12">
+                <div class="client-profil position-relative">
+                    <cite> <img src="assets/images/julia.jpg"> Anonyme</cite>
+                    <button type="button" class=" btn like position-absolute top-0 end-0 like"><i class="fas fa-heart">
+                            1</i> </button>
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quos a obcaecati
+                        explicabo
+                        porro sint nulla ex quasi alias, ipsa necessitatibus in consequatur cum earum esse
+                        deleniti
+                        delectus unde perspiciatis.
 
-
+                    </blockquote>
                 </div>
 
-                <div class="col-md-12">
-                    <div class="client-profil position-relative row">
-                        <div class="col-6"> <cite> <img src="assets/images/emilie.jpg"> Anonyme</cite></div>
-                        <div><i class="fas fa-heart  position-absolute like top-0 end-0"> 2</i></div>
-                        <blockquote>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quos a obcaecati
-                            explicabo
-                            porro sint nulla ex quasi alias, ipsa necessitatibus in consequatur cum earum esse
-                            deleniti
-                            delectus unde perspiciatis.
-                        </blockquote>
-                    </div>
 
-                </div>
-                <div class="col-md-12">
-                    <div class="client-profil position-relative row">
-                        <div class="col-6"> <cite> <img src="assets/images/blaise.jpg"> Anonyme</cite></div>
-                        <div><i class="fas fa-heart  position-absolute like top-0 end-0"> 2</i></div>
-                        <blockquote>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quos a obcaecati
-                            explicabo
-                            porro sint nulla ex quasi alias, ipsa necessitatibus in consequatur cum earum esse
-                            deleniti
-                            delectus unde perspiciatis.
-                        </blockquote>
-                    </div>
-
-                </div>
             </div>
+
+            <div class="col-md-12">
+                <div class="client-profil position-relative">
+                    <cite> <img src="assets/images/emilie.jpg"> Anonyme</cite>
+                    <button type="button" class=" btn like position-absolute top-0 end-0 like"><i class="fas fa-heart">
+                            1</i> </button>
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quos a obcaecati
+                        explicabo
+                        porro sint nulla ex quasi alias, ipsa necessitatibus in consequatur cum earum esse
+                        deleniti
+                        delectus unde perspiciatis.
+                    </blockquote>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div class="client-profil position-relative">
+                    <cite> <img src="assets/images/blaise.jpg"> Anonyme</cite>
+                    <button type="button" class=" btn like position-absolute top-0 end-0 like"><i class="fas fa-heart">
+                            1</i> </button>
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quos a obcaecati
+                        explicabo
+                        porro sint nulla ex quasi alias, ipsa necessitatibus in consequatur cum earum esse
+                        deleniti
+                        delectus unde perspiciatis.
+                    </blockquote>
+                </div>
+
+            </div>
+
 
             <!----Ajouter un commentaires----->
             <div class="col-md-12 bg-com">

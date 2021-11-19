@@ -59,7 +59,7 @@ h2:after {
 
 h3 {
     font-size: 160%;
-    text-align: center;
+   text-align: center;
 }
 
 h4 {
@@ -70,6 +70,7 @@ p {
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
+    margin: 5px;
 }
 
 
@@ -272,7 +273,7 @@ header {
 /* Commentaires
 ============================*/
 .client-profil {
-    border: 2px solid grey;
+    border: 2px solid #00c026;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
@@ -283,6 +284,7 @@ blockquote {
     line-height: 130%;
     font-style: italic;
     color: rgb(0, 0, 0);
+    margin: 5px 0 5px 5px;
 }
 
 cite {
@@ -295,7 +297,7 @@ cite {
 cite img {
     height: 50px;
     border-radius: 50%;
-}
+    margin: 0 5px 5px 5px;}
 
 .img-user {
     height: 50px;
@@ -304,7 +306,7 @@ cite img {
 
 .bg-com {
     margin-top: 20px;
-    border: 2px solid grey;
+    border: 2px solid #00c026;;
     padding: 5px 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -312,14 +314,15 @@ cite img {
 .like {
     padding: 5px 10px;
     border-radius: 10px;
-    color: rgb(252, 252, 252);
-    border: 1px solid rgba(20, 243, 0, 0.685);
-    background-color: rgba(20, 243, 0, 0.685);
+    color: rgb(255, 255, 255);
+    border: 1px solid  #00c026;
+    background-color:  #00c527;
     transition: background-color 1s, color 1s, border 1s;
 }
 .like:hover{
-    background-color:rgb(255, 255, 255);
-    color:#f3ba00
+    color: rgba(226, 77, 77, 0.979) ;
+    font-size: 20px;
+    
 }
 
 /* Galerie 
