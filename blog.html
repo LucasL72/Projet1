@@ -53,6 +53,9 @@
                 <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#MyModal">
                     Se connecter/S'inscrire
                 </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#disconnect">
+                    <i class="fas fa-power-off"></i>
+                </button>
                 <!-- Modal -->
                 <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -108,6 +111,7 @@
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label for="loginEmail" class="form-label">Votre Adresse Mail</label>
+                                    <p class="text-lowercase">Nous vous enverrons le mail de réinitialisation</p>
                                     <input type="email" class="form-control" id="loginEmail"
                                         aria-describedby="emailHelp">
                                     <div id="emailHelp" class="form-text"></div>
@@ -121,6 +125,26 @@
                         </div>
                     </div>
                 </div>
+                <!--  Modal disconnect -->
+            <div class="modal fade" id="disconnect" aria-hidden="true" aria-labelledby="disconnectmodal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="disconnectmodal">Se déconnecter</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous vraiment vous déconnecter ?
+                            
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type ="button" class="btn btn-contact" data-bs-dismiss="modal">confirmer</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </nav>
@@ -249,7 +273,7 @@
                     <div class="contact-form">
                         <label>Newsletter:</label>
                         <input type="email" id="email" placeholder="Ajouter votre email" />
-                        <button class="btn btn-contact">Envoyer</button>
+                        <button class="btn btn-contact">S'inscrire</button>
 
                     </div>
                 </div>
