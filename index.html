@@ -24,13 +24,13 @@
     <!-------------------Navbar---------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-theme">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo2.png" alt="" width="40" height="35">
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logo2.png" alt="" width="40" height="35">
                 Mon Site </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="collapse navbar-collapse" id="navbarToggler">
 
                 <ul class="navbar-nav me-auto mb-2mb-lg-0">
                     <li class="nav-item">
@@ -53,7 +53,7 @@
                 <!-------------------Modal "se connecter"---------------------------------------------->
                 <!-- Button modal -->
 
-                <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#MyModal">
+                <button type="button" class="btn btn-full" data-bs-toggle="modal" data-bs-target="#connectModal">
                     Se connecter/S'inscrire
                 </button>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#disconnect">
@@ -62,11 +62,11 @@
             </div>
 
             <!-- 1 Modal -->
-            <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Se connecter/S'inscrire</h5>
+                            <h5 class="modal-title" id="ModalLabel">Se connecter/S'inscrire</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -102,12 +102,12 @@
                 </div>
             </div>
             <!-- 2 Modal lost password -->
-            <div class="modal fade" id="lostpassword" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            <div class="modal fade" id="lostpassword" aria-hidden="true" aria-labelledby="ModalToggleLabel2"
                 tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalToggleLabel2">Mot de passe oublié</h5>
+                            <h5 class="modal-title" id="ModalToggleLabel2">Mot de passe oublié</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-contact" data-bs-target="#MyModal" data-bs-toggle="modal">Se
+                            <button class="btn btn-contact" data-bs-target="#connectModal" data-bs-toggle="modal">Se
                                 connecter</button>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
 
                 <div class="col-md-4">
                     <div class="famille-details">
-                        <img src="assets/images/paysage2.jpg">
+                        <img src="assets/images/paysage2.jpg" alt="paysage">
                         <h4>Première famille</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus doloribus et
                             tempora
@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="famille-details">
-                        <img src="assets/images/paysage4.jpg">
+                        <img src="assets/images/paysage4.jpg" alt="paysage">
                         <h4>Deuxième famille</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus doloribus et
                             tempora
@@ -197,7 +197,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="famille-details">
-                        <img src="assets/images/paysage3.jpg">
+                        <img src="assets/images/paysage3.jpg" alt="paysage">
                         <h4>Troisième famille</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus doloribus et
                             tempora
